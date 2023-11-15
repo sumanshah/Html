@@ -1,0 +1,41 @@
+.meal-bg-container{
+    width: 400px;
+    height: 600px;
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png');
+    background-size: cover;
+    position: relative;
+}
+
+.meal-div{
+    height: 180px;
+    width: 370px;
+    background-color: #f6c56e;
+    color: #323f4b;
+    padding: 15px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.meal-main-heading{
+    font-family: Bree Serif;
+}
+
+.meal-para-btn{
+    font-family: Roboto;
+}
+
+.meal-para{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meal-button{
+    background-color: #ffffff;
+    height: 40px;
+    width: 110px;
+    font-size: 15px;
+    border-width: 0px;
+    border-radius: 10px;
+}

@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assign13.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="sectionHome">
+                <div class="home-top-container"></div>
+                <div class="home-bottom-container">
+                <h1 class="home-header1">My Projects</h1>
+                <p class="home-para1">These are a few of my Static Website projects that I have developed using HTML, CSS and Bootstrap</p>
+                <div class="d-flex flex-row">
+                   <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="home-img1" onclick="display('sectionAdvancedTechnology')" />
+                   <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="home-img2" onclick="display('sectionDiwali')"  />
+                </div>
+                <div class="d-flex flex-row">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="home-img1" onclick="display('sectionMeals')"  />
+                   <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="home-img2" onclick="display('sectionNews')" />
+                </div>
+                </div>
+        </div>
+        <div id="sectionAdvancedTechnology">
+          <div class="advtech-bg-container d-flex flex-column justify-content-end">
+            <div class="advtech-card1">
+                <h2 class="advtech-h1">Advanced Technologies</h2>
+                <p class="advtech-para"> Machinery equipment developed from the application of scientific knowledge.</p>
+                <button class="btn advtech-b2">learn more</button>
+                <button class="btn btn-primary advtech-b1" onclick="display('sectionHome')">back</button>
+            </div>
+        </div>
+        </div>
+        <div id="sectionDiwali">
+          <div class="diwali-top-section">
+            <h3 class="diwali-top-section-heading">Celebrate Diwali with your friends</h3>
+        </div>
+        <div class="diwali-bottom-section">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-card-item">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-card-image" />
+            <h1 class="diwali-card-name"> Diwali Air Balloon</h1>
+            <p class="diwali-card-price">Rs 369</p>
+       -        </div>
+       -        <div class="diwali-card-item">
+             <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-card-image" />
+             <h1 class="diwali-card-name">Diwali - Lamp</h1>
+             <p class="diwali-card-price">Rs 50</p>
+   -        </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-card-item">
+             <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-card-image" />
+             <h1 class="diwali-card-name">Sparklers</h1>
+             <p class="diwali-card-price">Rs 150</p>
+-        </div>
+-               <div class="diwali-card-item">
+             <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-card-image" />
+             <h1 class="diwali-card-name"> Fire Cracker</h1>
+             <p class="diwali-card-price">Rs 560</p>
+-        </div>
+             </div>
+             <button class="btn btn-primary" onclick="display('sectionHome')">Back</button>
+        </div>
+        </div>
+        <div id="sectionMeals">
+          <div class="meal-bg-container">
+            <div class="meal-div">
+                <h1 class="meal-main-heading"> Happy Meals </h1>
+                <p class="meal-para meal-para-btn">Discover the best foods over the 1,000 restaurants</p> 
+                <button class="meal-button meal-para-btn"> Book now </button>
+                <button class="btn btn-primary advtech-b1" onclick="display('sectionHome')">back</button>
+            </div>
+            </div>
+        </div>
+        <div id="sectionNews">
+          <div class="news-bg_container d-flex flex-column justify-content-end">
+            <div class="news-card1">
+                <p class="news-para">NEWS OF THE DAY</p>
+                <h1 class="news-header1">iB Cricket announces world's first Virtual Reality Cricket League</h1>
+                <p class="news-para">iB Cricket and Viu together have announced the World's first virtual reality cricket league featuring twelve international cricketers,
+                    who will be competing against each other for the iB Cricket Super Over League Title in Mumbai. 
+                    Iconic Cricketers like Virendra Sehwag, Suresh Raina, Brendon McCullum will be competing in the league
+					</p>
+                <button class="news-button" onclick="display('sectionHome')">Back</button>
+            </div>
+        </div>    
+        </div>
+
+        <script>
+            let sections = document.querySelectorAll('[id^="section"]');
+    
+            if (sections.length > 1) {
+              let sectionOne = sections[0];
+              sections.forEach((section) => {
+                if (section != sectionOne) {
+                  $(section).css("display", "none");
+                }
+              });
+            }
+            const display = (sectionId) => {
+              makeRemainingScreensInvisible(sectionId);
+              let section = document.getElementById(sectionId);
+              $(section).css("display", "block");
+              window.scrollTo(0, 0);
+            };
+            
+            const makeRemainingScreensInvisible = (sectionId) => {
+              let sections = document.querySelectorAll('[id^="section"]');
+              sections.forEach((section) => {
+                if ($(section).attr("id") != sectionId) {
+                  $(section).css("display", "none");
+                }
+              });
+            };
+            </script> 
+    </body>
+</html>

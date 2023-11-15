@@ -1,0 +1,94 @@
+.top_section_Card{
+    width: 450px;
+    height: 170px;
+    background-color: #fb4e71;
+    padding: 18px;
+}
+
+.written_div{
+    height: 180;
+    width: 350px;
+}
+
+.header1{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.para{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.img1{
+    float: right;
+    margin-top: -180px;
+    margin-left: -50px;
+
+}
+
+.bg_bottom_section{
+    background-color: #e6f6ff;
+    width: 450px;
+    height: 500px;
+    padding-left: 10px;
+}
+
+.header2{
+font-size: 20px;
+padding: 10px;
+font-weight: bold;
+}
+
+.card1{
+    height: 130px;
+    width: 400px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+.img2{
+    width: 120px;
+    height: 130px;
+    float: left;
+    padding-right: 10px;
+}
+
+.header3{
+    font-size: 20px;
+    color: #323f4b;
+    padding-top: 5px;
+}
+
+.para1{
+    font-size: 15px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.Videos_section{
+    height: 100px;
+    width: 400px;
+    margin: 10px;
+
+}
+
+.image345{
+    height: 100px;
+    width: 120px;
+}
+
+.para345{
+    font-size: 15px;
+    color: #323f4b;
+}
+
+.button{
+    height: 40px;
+    width: 120px;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: -20px;
+}

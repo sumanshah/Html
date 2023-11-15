@@ -1,0 +1,62 @@
+.bg-container{
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png');
+    background-size: cover;
+    width: 400px;
+    height: 750px;
+}
+
+.carousel-container{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin-bottom: -20px;
+}
+
+.header1{
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: -30px;
+    font-weight: bold;
+}
+
+.button1{
+    height: 40px;
+    width: 110px;
+    background-color: white;
+    color: #ff8348;
+    border: 0px;
+    border-radius: 8px;
+    float: right;
+    margin-right: 30px ;
+    margin-top: -45px;
+}
+
+.para{
+    font-size: 13px;
+    color: white;
+    padding: 30px;
+    margin-top: -25px;
+}
+
+.header2{
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+    margin-top: -25px;
+    margin-top: -50px;
+}
+
+.img1{
+    padding: 10px;
+    padding-left: 30px;
+    margin-top: -40px;
+}
+
+.img2{
+    margin-top: -40px;
+}
+
+.img3{
+    margin-top: -40px;
+}

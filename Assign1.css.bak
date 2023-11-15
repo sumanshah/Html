@@ -1,0 +1,33 @@
+
+.bg-conatainer{
+    width: 400px;
+    height: 500px;
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/todolistbg.png');
+    background-size: cover;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    padding: 5px;
+}
+.main-heading{
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+}
+
+.parah{
+    text-align: left;
+    font-family: Roboto;
+	text-align: center;
+}
+.button{
+    background-color: orange;
+    color: white;
+    font-family: Roboto;
+    height: 40px;
+    width: 100px;
+	border-radius: 25px;
+}
+.paragh{
+    text-decoration: underline;
+}

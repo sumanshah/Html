@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Assign12.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="sectionHome">
+        <div class="home-bg-container">
+            <h1 class="home-head1">Popular Book</h1>
+            <div class="home-top-conatiner">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="home-img1">
+                <h1 class="home-head2"> Wings of Fire</h1>
+                <p class="home-para1">An Autobiography of Abdul Kalam </p>
+                <p class="home-para2">by Aurn Tiwari</p>
+                <button class="btn btn-primary" onclick="display('sectionWingsOfFire')"> Read Now </button>
+            </div>
+            <h1 class="home-head3">Recommended Books</h1>
+            <div class="home-bottom-container">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="home-img23">
+                <h1 class="home-head4"> The 3 mistakes of my life</h1>
+                <p class="home-para3">Indian author <br/>by Chetan Bhagat </p>
+                <button class="btn btn-primary" onclick="display('sectionTheThreeMistakesOfMyLife')"> Read Now </button>
+            </div>
+            <div class="home-bottom-container">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="home-img23">
+                <h1 class="home-head4"> Harry Potter</h1>
+                <p class="home-para3">and the Sorcerer's Stone by J.K.Rowling</p>
+                <button class="btn btn-primary" onclick="display('sectionHarryPotter')"> Read Now </button>
+            </div>
+        </div>
+    </div>
+        <div id="sectionWingsOfFire">
+            <div class="detailed-bg-container">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="detailed-img123">
+                <h1 class="detailed-head1">Wings of Fire</h1>
+                <p1 class="detailed-author">by Arun Tiwari</p1>
+                <br/>
+                <div class="detailed-description"> Every comman man who by his sheer gift and hard work achieves success should share his story with the rest for they may find inspiration and strength to go on, in his story. The 'Wings of Fire' is one such autobiography by visionary scientist Dr. APJ Abdul Kalam, who from very humble beginnings rose to be the President of India. The book is full of insights, Personal moments and life experiences of Dr. Kalam. It gives us an understanding on his journey of success.</div>
+                <br/>
+                <button class="btn btn-warning detailed-btn" onclick="display('sectionHome')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+        <div id="sectionTheThreeMistakesOfMyLife">
+            <div class="detailed-bg-container">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="detailed-img123">
+                <h1 class="detailed-head2">The 3 mistakes of my life</h1>
+                <p1 class="detailed-author">by Chetan Bhagat</p1>
+                <br/>
+                <div class="detailed-description">The 3 Mistakes of my life is the third novel written by eminent Indian Author Chetan Bhagat. Based on cricket, business and religion, the novel is set against the backdrop of beautiful city Ahmedabad. Revolving around three young Indain boys Omi, Ishaan and Govind, the book goes on to narrate how th three are tyring thier best to make ends meet in the city. Based on real events, the book starts with a dramatic twist, where Bhagat is reading an e-mail sent by some young person Govind.</div>
+                <br/>
+                <button class="btn btn-warning detailed-btn" onclick="display('sectionHome')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+        <div id="sectionHarryPotter">
+            <div class="detailed-bg-container">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="detailed-img123">
+                <h1 class="detailed-head1">Harry Potter</h1>
+                <p1 class="detailed-author">by J.K.Rowling</p1>
+                <br/>
+                <div class="detailed-description"> Harry Potter's life is miserable. His parents are dead and he's stuck with his hearless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he recieves a letter that tells him the truth about himself: he's aa wizard. A mysterious visitor rescues him from his relatives and takes him to his new home,Hogwarts school of witchcraft and wizardry. After a lifetime of bottling up his magical powers, harry finally feels like a normal kid.</div>
+                <br/>
+                <button class="btn btn-warning detailed-btn" onclick="display('sectionHome')">Back</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+        <script>
+            let sections = document.querySelectorAll('[id^="section"]');
+    
+            if (sections.length > 1) {
+              let sectionOne = sections[0];
+              sections.forEach((section) => {
+                if (section != sectionOne) {
+                  $(section).css("display", "none");
+                }
+              });
+            }
+            const display = (sectionId) => {
+              makeRemainingScreensInvisible(sectionId);
+              let section = document.getElementById(sectionId);
+              $(section).css("display", "block");
+              window.scrollTo(0, 0);
+            };
+            
+            const makeRemainingScreensInvisible = (sectionId) => {
+              let sections = document.querySelectorAll('[id^="section"]');
+              sections.forEach((section) => {
+                if ($(section).attr("id") != sectionId) {
+                  $(section).css("display", "none");
+                }
+              });
+            };
+            </script> 
+    </body>
+</html>
